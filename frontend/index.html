@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGenius</title>
+    <link rel="stylesheet" href="frontend/css/tailwind.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-10">
+        <h1 class="text-4xl font-bold mb-6">CodeGenius</h1>
+        <div class="bg-white p-6 rounded shadow">
+            <div id="displayTextBox" class="bg-gray-200 p-4 rounded mb-4 overflow-auto">
+                <!-- Generated code will be displayed here -->
+            </div>
+            <div class="flex items-center">
+                <textarea id="inputBox" class="flex-grow bg-gray-100 p-2 rounded mr-2" rows="3" placeholder="Type your query here..."></textarea>
+                <button id="sendButton" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+            </div>
+            <button id="copyButton" class="bg-green-500 text-white px-4 py-2 rounded mt-4">Copy Code</button>
+        </div>
+    </div>
+    <script src="frontend/js/chat.js"></script>
+</body>
+</html>
